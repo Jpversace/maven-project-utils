@@ -53,10 +53,16 @@ under the License.
     <url>https://ci-builds.apache.org/job/Maven/job/maven-box/job/maven-project-utils/</url>
   </ciManagement>
   <distributionManagement>
-    <site>
-      <id>apache.website</id>
-      <url>scm:svn:https://svn.apache.org/repos/asf/maven/website/components/${maven.site.path}</url>
-    </site>
+    <repository>
+      <id>nexus</id>
+      <url>http://172.31.88.210:8081/repository/test-release//</url>
+    </repository>
+    
+    <snapshotRepository>
+	      <id>nexus</id>
+	      <url>http://172.31.88.210:8081/repository/test-snapshot//</url>
+	    </snapshotRepository>
+    
   </distributionManagement>
 
   <properties>
