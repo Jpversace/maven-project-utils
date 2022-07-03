@@ -59,9 +59,9 @@ under the License.
     </repository>
     
     <snapshotRepository>
-	      <id>nexus</id>
-	      <url>http://172.31.88.210:8081/repository/test-snapshot//</url>
-	    </snapshotRepository>
+	<id>nexus</id>
+	<url>http://172.31.88.210:8081/repository/test-snapshot//</url>
+    </snapshotRepository>
     
   </distributionManagement>
 
@@ -69,6 +69,9 @@ under the License.
     <mavenVersion>3.1.0</mavenVersion>
     <javaVersion>7</javaVersion>
     <project.build.outputTimestamp>2020-04-04T09:03:59Z</project.build.outputTimestamp>
+    <sonar.host.url>http://172.31.94.87:9000/</sonar.host.url>
+    <sonar.login>admin</sonar.login>
+    <sonar.password>admin</sonar.password>
   </properties>
 
   <dependencies>
